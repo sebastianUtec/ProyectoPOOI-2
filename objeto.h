@@ -13,7 +13,7 @@ private:
     palabra color;
     int danio;
 public:
-    objeto();
+    objeto(){};
     void ubicarse en la arena();
     void moverse();
     ~objeto();
