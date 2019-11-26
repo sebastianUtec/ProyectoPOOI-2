@@ -4,7 +4,7 @@
 
 class objeto {
 private:
-  palabra nombre;
+  string nombre;
   int posicion*;
   palabra color;
 public:
