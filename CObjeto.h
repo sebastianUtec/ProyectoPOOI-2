@@ -1,17 +1,25 @@
-#ifndef UNTITLED11_OBJETO_H
-#define UNTITLED11_OBJETO_H
+//
+// Created by SEBASTIAN on 26/11/2019.
+//
 
+#ifndef PROYECTO2_COBJETO_H
+#define PROYECTO2_COBJETO_H
 
-class objeto {
+#include <iostream>
+using namespace std;
+
+class CObjeto {
 private:
-  string nombre;
-  int posicion*;
-  palabra color;
+    int posicionx;
+    int posiciony;
+    char caracter;
 public:
-  objeto(){};
-  void moverse();
-  void ubicarse_en_arena();
+    CObjeto(){posicionx=0;posiciony=0;}
+    CObjeto(int x , int y , char caracter);
+    char getcaracter(){return caracter;}
+    int getposicionx(){ return posicionx;}
+    int getposiciony(){ return posiciony;}
 };
 
 
-#endif //UNTITLED11_OBJETO_H
+#endif //PROYECTO2_COBJETO_H
